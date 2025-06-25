@@ -98,10 +98,10 @@
 
         layer_2 {
             bindings = <
-&kp ESCAPE          &kp LS(LG(LEFT_BRACKET))  &kp UP_ARROW    &kp LS(LG(RIGHT_BRACKET))  &kp LC(UP_ARROW)                             &kp C_MUTE       &trans                &kp PAGE_UP           &kp RA(RG(NON_US_BACKSLASH))  &trans
-&kp LG(LEFT_ARROW)  &kp LEFT_ARROW            &kp DOWN_ARROW  &kp RIGHT_ARROW            &kp LG(RIGHT_ARROW)  &trans    &kp C_BRI_UP  &kp C_VOLUME_UP  &kp HOME              &kp PAGE_DOWN         &kp END                       &kp RIGHT_CONTROL
-&kp LEFT_SHIFT      &kp LG(LEFT_BRACKET)      &trans          &kp LG(RIGHT_BRACKET)      &kp LC(DOWN_ARROW)   &trans    &kp C_BRI_DN  &kp C_VOL_DN     &kp LS(LG(NUMBER_3))  &kp LS(LG(NUMBER_4))  &kp LS(LG(NUMBER_5))          &kp RIGHT_SHIFT
-&trans              &trans                    &trans          &trans                     &trans               &trans    &trans        &trans                                                                                     &trans
+&kp ESCAPE          &kp LS(LG(LEFT_BRACKET))  &kp UP_ARROW    &kp LS(LG(RIGHT_BRACKET))  &kp LC(UP_ARROW)                             &kp C_MUTE       &trans                &kp PAGE_UP           &kp RA(RG(BACKSLASH))  &trans
+&kp LG(LEFT_ARROW)  &kp LEFT_ARROW            &kp DOWN_ARROW  &kp RIGHT_ARROW            &kp LG(RIGHT_ARROW)  &trans    &kp C_BRI_UP  &kp C_VOLUME_UP  &kp HOME              &kp PAGE_DOWN         &kp END                &kp RIGHT_CONTROL
+&kp LEFT_SHIFT      &kp LG(LEFT_BRACKET)      &trans          &kp LG(RIGHT_BRACKET)      &kp LC(DOWN_ARROW)   &trans    &kp C_BRI_DN  &kp C_VOL_DN     &kp LS(LG(NUMBER_3))  &kp LS(LG(NUMBER_4))  &kp LS(LG(NUMBER_5))   &kp RIGHT_SHIFT
+&trans              &trans                    &trans          &trans                     &trans               &trans    &trans        &trans                                                                              &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
