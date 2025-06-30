@@ -21,6 +21,8 @@
 / {
     combos {
         compatible = "zmk,combos";
+        timeout-ms = <30>;
+        require-prior-idle-ms = <50>;
 
         tab {
             bindings = <&kp TAB>;
