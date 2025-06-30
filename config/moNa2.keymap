@@ -7,9 +7,7 @@
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 100
 #define MOUSE 6
 
-&mkp_input_listener {
-    input-processors = <&zip_temp_layer MOUSE 10000>;
-};
+&mkp_input_listener { input-processors = <&zip_temp_layer MOUSE 10000>; };
 
 &mt {
     flavor = "balanced";
@@ -89,7 +87,7 @@
         default_layer {
             bindings = <
 &kp Q               &kp W      &lt 5 E       &kp R                   &kp T                                                 &kp Y        &kp U  &lt 5 I    &kp O    &kp P
-&mt LEFT_CONTROL A  &kp S      &lt 6 D       &kp F                   &kp G                 &trans         &kp MINUS        &kp H        &kp J  &lt 6 K    &kp L    &mt RIGHT_COMMAND SEMICOLON
+&mt LEFT_CONTROL A  &kp S      &lt 6 D       &kp F                   &kp G                 &trans         &kp MINUS        &kp H        &kp J  &kp K      &kp L    &mt RIGHT_COMMAND SEMICOLON
 &mt LEFT_SHIFT Z    &kp X      &kp C         &kp V                   &kp B                 &lt 4 TAB      &kp DELETE       &kp N        &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
 &kp CAPSLOCK        &kp LCTRL  &kp LEFT_ALT  &mt LEFT_COMMAND LANG2  &mt LEFT_SHIFT SPACE  &lt 1 LANG1    &lt 2 BACKSPACE  &lt 3 ENTER                             &mt RIGHT_CONTROL ESCAPE
             >;
