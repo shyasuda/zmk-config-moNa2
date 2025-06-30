@@ -18,7 +18,6 @@
 &zip_temp_layer {
     require-prior-idle-ms = <200>;
     excluded-positions = <18 19 20>;
-    excluded-layers = <5>;
 };
 
 / {
@@ -27,6 +26,10 @@
         device = <&trackball>;
         input-processors = <&zip_temp_layer 6 10000>;
 
+        scroller {
+            layers = <5>;
+            input-processors = <&zip_xy_to_scroll_mapper>;
+        };
     };
 };
 
