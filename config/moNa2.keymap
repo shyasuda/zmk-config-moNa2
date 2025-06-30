@@ -13,12 +13,14 @@
     flavor = "balanced";
     tapping-term-ms = <150>;
     quick-tap-ms = <175>;
+    require-prior-idle-ms = <50>;
 };
 
 &lt {
     flavor = "balanced";
     tapping-term-ms = <150>;
     quick-tap-ms = <175>;
+    require-prior-idle-ms = <50>;
 };
 
 / {
