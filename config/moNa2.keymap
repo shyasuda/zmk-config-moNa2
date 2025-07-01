@@ -82,6 +82,7 @@
             flavor = "hold-preferred";
             tapping-term-ms = <200>;
             bindings = <&kp>, <&kp>;
+            quick-tap-ms = <250>;
 
             display-name = "Mod-Tap Hold Preferred";
         };
@@ -92,6 +93,7 @@
             flavor = "hold-preferred";
             tapping-term-ms = <200>;
             bindings = <&mo>, <&kp>;
+            quick-tap-ms = <250>;
 
             display-name = "Layer-Tap Hold Preferred";
         };
