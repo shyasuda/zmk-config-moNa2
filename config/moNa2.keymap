@@ -112,6 +112,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "MT_exit_AML_ON_TAP";
             bindings = <&kp>, <&kp_exit_AML>;
+
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             flavor = "balanced";
@@ -122,6 +123,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "MT_exit_AML_ON_TAP_HP";
             bindings = <&kp>, <&kp_exit_AML>;
+
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             flavor = "hold-preferred";
@@ -132,6 +134,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "LT_exit_AML_ON_TAP";
             bindings = <&mo>, <&kp_exit_AML>;
+
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             flavor = "balanced";
@@ -142,6 +145,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "LT_exit_AML_ON_TAP_HP";
             bindings = <&mo>, <&kp_exit_AML>;
+
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             flavor = "hold-preferred";
@@ -154,10 +158,10 @@
 
         default_layer {
             bindings = <
-&kp Q               &kp W           &kp E         &kp R                      &kp T                                                                    &kp Y           &kp U  &kp I      &kp O    &kp P
-&mt LEFT_CONTROL A  &kp S           &lt 2 D       &kp F                      &kp G           &trans                     &kp SEMICOLON                 &kp H           &kp J  &kp K      &kp L    &mt RIGHT_COMMAND MINUS
-&mt LEFT_SHIFT Z    &kp X           &kp C         &kp V                      &kp B           &lt 4 TAB                  &kp DELETE                    &kp N           &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
-&kp CAPSLOCK        &kp LEFT_SHIFT  &kp LEFT_ALT  &mt_hp LEFT_COMMAND LANG2  &lt_hp 5 SPACE  &mt_hp LEFT_SHIFT LANG1    &mt_hp RIGHT_SHIFT BACKSPACE  &lt_hp 1 ENTER                             &mt_hp RIGHT_CONTROL ESCAPE
+&lt 6 Q                             &kp W           &kp E         &kp R                                      &kp T                                                                                                    &kp Y        &kp U  &kp I      &kp O    &lt 5 P
+&mt_exit_AML_on_tap LEFT_CONTROL A  &kp S           &lt 2 D       &kp F                                      &kp G           &trans                                     &kp SEMICOLON                                 &kp H        &kp J  &kp K      &kp L    &mt_exit_AML_on_tap RIGHT_COMMAND MINUS
+&mt_exit_AML_on_tap LEFT_SHIFT Z    &kp X           &kp C         &kp V                                      &kp B           &lt 4 TAB                                  &kp DELETE                                    &kp N        &kp M  &kp COMMA  &kp DOT  &mt_exit_AML_on_tap RIGHT_SHIFT SLASH
+&kp CAPSLOCK                        &kp LEFT_SHIFT  &kp LEFT_ALT  &mt_exit_AML_on_tap_hp LEFT_COMMAND LANG2  &lt_hp 5 SPACE  &mt_exit_AML_on_tap_hp LEFT_SHIFT LANG1    &mt_exit_AML_on_tap_hp RIGHT_SHIFT BACKSPACE  &lt 1 ENTER                             &mt_exit_AML_on_tap_hp RIGHT_CONTROL ESCAPE
             >;
 
             sensor-bindings =
