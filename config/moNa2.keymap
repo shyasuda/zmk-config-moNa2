@@ -136,10 +136,10 @@
 
         default_layer {
             bindings = <
-&lt 6 Q                             &kp W           &kp E         &kp R                                      &kp T                                                                                                    &kp Y        &kp U  &kp I      &kp O    &lt 5 P
-&mt_exit_AML_on_tap LEFT_CONTROL A  &kp S           &lt 2 D       &kp F                                      &kp G           &trans                                     &kp SEMICOLON                                 &kp H        &kp J  &kp K      &kp L    &mt_exit_AML_on_tap RIGHT_COMMAND MINUS
-&mt_exit_AML_on_tap LEFT_SHIFT Z    &kp X           &kp C         &kp V                                      &kp B           &lt 4 TAB                                  &kp DELETE                                    &kp N        &kp M  &kp COMMA  &kp DOT  &mt_exit_AML_on_tap RIGHT_SHIFT SLASH
-&kp CAPSLOCK                        &kp LEFT_SHIFT  &kp LEFT_ALT  &mt_exit_AML_on_tap_hp LEFT_COMMAND LANG2  &lt_hp 5 SPACE  &mt_exit_AML_on_tap_hp LEFT_SHIFT LANG1    &mt_exit_AML_on_tap_hp RIGHT_SHIFT BACKSPACE  &lt 1 ENTER                             &mt_exit_AML_on_tap_hp RIGHT_CONTROL ESCAPE
+&lt 6 Q                             &kp W           &kp E         &kp R                                      &kp T                                                                                                    &kp Y           &kp U  &kp I      &kp O    &lt 5 P
+&mt_exit_AML_on_tap LEFT_CONTROL A  &kp S           &lt 2 D       &kp F                                      &kp G           &trans                                     &kp SEMICOLON                                 &kp H           &kp J  &kp K      &kp L    &mt_exit_AML_on_tap RIGHT_COMMAND MINUS
+&mt_exit_AML_on_tap LEFT_SHIFT Z    &kp X           &kp C         &kp V                                      &kp B           &lt 4 TAB                                  &kp DELETE                                    &kp N           &kp M  &kp COMMA  &kp DOT  &mt_exit_AML_on_tap RIGHT_SHIFT SLASH
+&kp CAPSLOCK                        &kp LEFT_SHIFT  &kp LEFT_ALT  &mt_exit_AML_on_tap_hp LEFT_COMMAND LANG2  &lt_hp 5 SPACE  &mt_exit_AML_on_tap_hp LEFT_SHIFT LANG1    &mt_exit_AML_on_tap_hp RIGHT_SHIFT BACKSPACE  &lt_hp 1 ENTER                             &mt_exit_AML_on_tap_hp RIGHT_CONTROL ESCAPE
             >;
 
             sensor-bindings =
@@ -160,9 +160,9 @@
 
         layer_2 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                                      &kp SINGLE_QUOTE   &kp TILDE      &kp EQUAL  &kp BACKSLASH     &kp GRAVE
+&trans  &trans  &trans  &trans  &trans                                      &kp SINGLE_QUOTE   &kp TILDE      &kp EQUAL  &kp PIPE          &kp GRAVE
 &trans  &trans  &trans  &trans  &trans  &trans    &trans                    &kp DOUBLE_QUOTES  &kp SEMICOLON  &kp COLON  &kp LEFT_BRACKET  &mt RIGHT_COMMAND RIGHT_BRACKET
-&trans  &trans  &trans  &trans  &trans  &trans    &trans                    &trans             &kp MINUS      &kp PLUS   &kp ASTERISK      &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans                    &kp BACKSLASH      &kp MINUS      &kp PLUS   &kp ASTERISK      &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &mt_hp RIGHT_SHIFT SPACE  &trans                                                         &trans
             >;
 
