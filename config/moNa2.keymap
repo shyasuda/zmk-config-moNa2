@@ -20,7 +20,24 @@
 };
 
 / {
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        test1 {
+            bindings = <&none>;
+            key-positions = <21 33 42>;
+        };
+
+        test2 {
+            bindings = <&none>;
+            key-positions = <22 36>;
+        };
+
+        test3 {
+            bindings = <&none>;
+            key-positions = <37 39 40>;
+        };
+    };
 
     macros {
         to_layer_0: to_layer_0 {
@@ -148,10 +165,10 @@
 
         layer_2 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                                      &kp SINGLE_QUOTE   &kp TILDE      &kp EQUAL  &kp PIPE          &kp GRAVE
-&trans  &trans  &trans  &trans  &trans  &trans    &trans                    &kp DOUBLE_QUOTES  &kp SEMICOLON  &kp COLON  &kp LEFT_BRACKET  &mt RIGHT_COMMAND RIGHT_BRACKET
-&trans  &trans  &trans  &trans  &trans  &trans    &trans                    &kp BACKSLASH      &kp MINUS      &kp PLUS   &kp ASTERISK      &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &mt_hp RIGHT_SHIFT SPACE  &trans                                                         &trans
+&trans  &trans  &trans  &trans  &trans                     &kp SINGLE_QUOTE   &kp TILDE      &kp EQUAL  &kp PIPE          &kp GRAVE
+&trans  &trans  &trans  &trans  &trans  &trans    &trans   &kp DOUBLE_QUOTES  &kp SEMICOLON  &kp COLON  &kp LEFT_BRACKET  &mt RIGHT_COMMAND RIGHT_BRACKET
+&trans  &trans  &trans  &trans  &trans  &trans    &trans   &kp BACKSLASH      &kp MINUS      &kp PLUS   &kp ASTERISK      &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp TAB  &trans                                                         &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
