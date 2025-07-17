@@ -149,10 +149,10 @@
 
         layer_1 {
             bindings = <
-&kp ESCAPE          &kp LS(LG(LEFT_BRACKET))  &kp UP_ARROW    &kp LS(LG(RIGHT_BRACKET))  &kp LC(UP_ARROW)                             &kp C_MUTE       &trans                &kp PAGE_UP           &kp RA(RG(BACKSLASH))  &trans
-&kp LG(LEFT_ARROW)  &kp LEFT_ARROW            &kp DOWN_ARROW  &kp RIGHT_ARROW            &kp LG(RIGHT_ARROW)  &trans    &kp C_BRI_UP  &kp C_VOLUME_UP  &kp HOME              &kp PAGE_DOWN         &kp END                &kp RIGHT_CONTROL
-&kp LEFT_SHIFT      &kp LG(LEFT_BRACKET)      &trans          &kp LG(RIGHT_BRACKET)      &kp LC(DOWN_ARROW)   &trans    &kp C_BRI_DN  &kp C_VOL_DN     &kp LS(LG(NUMBER_3))  &kp LS(LG(NUMBER_4))  &kp LS(LG(NUMBER_5))   &kp RIGHT_SHIFT
-&trans              &trans                    &trans          &trans                     &trans               &trans    &trans        &trans                                                                              &trans
+&kp ESCAPE          &kp LS(LG(LEFT_BRACKET))  &kp UP_ARROW    &kp LS(LG(RIGHT_BRACKET))  &kp LC(UP_ARROW)                             &kp C_MUTE       &trans                &kp PAGE_UP           &kp RA(RG(BACKSLASH))               &trans
+&kp LG(LEFT_ARROW)  &kp LEFT_ARROW            &kp DOWN_ARROW  &kp RIGHT_ARROW            &kp LG(RIGHT_ARROW)  &trans    &kp C_BRI_UP  &kp C_VOLUME_UP  &kp HOME              &kp PAGE_DOWN         &kp END                             &kp RIGHT_COMMAND
+&kp LEFT_SHIFT      &kp LG(LEFT_BRACKET)      &trans          &kp LG(RIGHT_BRACKET)      &kp LC(DOWN_ARROW)   &trans    &kp C_BRI_DN  &kp C_VOL_DN     &kp LS(LG(NUMBER_3))  &kp LS(LG(NUMBER_4))  &mt RIGHT_ALT LS(LG(RS(NUMBER_5)))  &kp RIGHT_SHIFT
+&trans              &trans                    &trans          &trans                     &trans               &trans    &trans        &trans                                                                                           &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -160,10 +160,10 @@
 
         layer_2 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                     &kp SINGLE_QUOTE   &kp TILDE      &kp EQUAL  &kp PIPE          &kp GRAVE
-&trans  &trans  &trans  &trans  &trans  &trans    &trans   &kp DOUBLE_QUOTES  &kp SEMICOLON  &kp COLON  &kp LEFT_BRACKET  &mt RIGHT_COMMAND RIGHT_BRACKET
-&trans  &trans  &trans  &trans  &trans  &trans    &trans   &kp BACKSLASH      &kp MINUS      &kp PLUS   &kp ASTERISK      &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp TAB  &trans                                                         &trans
+&trans  &trans  &trans  &trans  &trans                                   &kp SINGLE_QUOTE   &kp TILDE      &kp EQUAL  &kp PIPE                &kp GRAVE
+&trans  &trans  &trans  &trans  &trans                &trans    &trans   &kp DOUBLE_QUOTES  &kp SEMICOLON  &kp COLON  &kp LEFT_BRACKET        &mt RIGHT_COMMAND RIGHT_BRACKET
+&trans  &trans  &trans  &trans  &trans                &trans    &trans   &kp BACKSLASH      &kp MINUS      &kp PLUS   &mt RIGHT_ALT ASTERISK  &trans
+&trans  &trans  &trans  &trans  &kp LA(LEFT_COMMAND)  &trans    &kp TAB  &trans                                                               &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -195,7 +195,7 @@
             bindings = <
 &kp NUMBER_1                       &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                        &kp NUMBER_6   &kp NUMBER_7   &kp NUMBER_8  &kp NUMBER_9          &kp NUMBER_0
 &mt LEFT_CONTROL EXCLAMATION       &kp AT_SIGN   &kp HASH      &kp DOLLAR    &kp PERCENT   &trans     &trans     &kp CARET      &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &mt RIGHT_COMMAND RIGHT_PARENTHESIS
-&mt_exit_AML_on_tap LEFT_SHIFT F1  &kp F2        &kp F3        &kp F4        &kp F5        &kp F11    &kp F12    &kp F6         &kp F7         &kp F8        &kp F9                &mt_exit_AML_on_tap RIGHT_SHIFT F10
+&mt_exit_AML_on_tap LEFT_SHIFT F1  &kp F2        &kp F3        &kp F4        &kp F5        &kp F11    &kp F12    &kp F6         &kp F7         &kp F8        &mt RIGHT_ALT F9      &mt_exit_AML_on_tap RIGHT_SHIFT F10
 &trans                             &trans        &trans        &trans        &trans        &trans     &kp SPACE  &kp BACKSPACE                                                     &trans
             >;
 
